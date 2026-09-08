@@ -1,0 +1,19 @@
+{
+  "name": "example-1920x1080",
+  "apply_button": [1400, 820],
+  "item_slot": [960, 420],
+  "inventory": [200, 700],
+  "runes": {
+    "vi": [360, 220],
+    "pa_vi": [400, 220],
+    "ra_vi": [440, 220],
+    "fo": [360, 260],
+    "pa_fo": [400, 260],
+    "ra_fo": [440, 260],
+    "ga_pa": [520, 220],
+    "ga_pme": [560, 220]
+  },
+  "click_offset_px": 3,
+  "animation_delay_s": 1.2,
+  "window_title_substring": "dofus"
+}

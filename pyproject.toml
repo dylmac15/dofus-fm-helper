@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dofus-fm-helper"
+version = "1.0.0"
+description = "Client-side Dofus Forgemage helper (FM decision engine + optional mouse clicks)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyautogui>=0.9.54",
+    "pynput>=1.7.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4.0"]
+
+[project.scripts]
+fm-helper = "fm_bot.main:main"
+
+[tool.setuptools.packages.find]
+include = ["fm_bot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
